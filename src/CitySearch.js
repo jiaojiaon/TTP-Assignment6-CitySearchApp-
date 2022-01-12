@@ -17,7 +17,7 @@ class CitySearch extends React.Component {
             cityName:event.target.zip.value
         })
         
-         fetch('http://ctp-zip-api.herokuapp.com/city/'+event.target.zip.value)
+         fetch('http://ctp-zip-api.herokuapp.com/city/'+event.target.zip.value.toUpperCase())
              .then(response=>{
                  return response.json();
              })
