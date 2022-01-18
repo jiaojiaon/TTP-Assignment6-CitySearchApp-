@@ -39,7 +39,7 @@ class CitySearch extends React.Component {
             <div>
                 <header>
                     <div className ="zip-header">
-                        <h1> Zip Code Search</h1>
+                        <h1>City Search</h1>
 
                         <div className ="submit-container">
                             <form onSubmit={this.handleChange}>
@@ -56,9 +56,9 @@ class CitySearch extends React.Component {
                     <div className ="zip-body">
                         {this.state.results.map((data, i) => (
                 
-                                <ul key = {i}>
-                                    <li>{data}</li>
-                                </ul>
+                                <p key = {i}>
+                                  Zip Code: {data}
+                                </p>
         
                     ))}
     
